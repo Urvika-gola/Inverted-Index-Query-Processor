@@ -205,7 +205,7 @@ class InvertedIndex:
                 j += 1
         return result
 
-    def q7_1_1(self, query: str) -> list[Document]:
+    def q7_1_1(self, query: str) -> list:
         """
         Method for Q8 Part 1.1
         Note: The positions begin from index 0 in my code.
@@ -214,7 +214,7 @@ class InvertedIndex:
         """
         return self._parse_query(query, True)
 
-    def q7_1_2(self, query: str) -> list[Document]:
+    def q7_1_2(self, query: str) -> list:
         """
         Method for Q8 Part 1.2
         Note: The positions begin from index 0 in my code.
@@ -223,7 +223,7 @@ class InvertedIndex:
         """
         return self._parse_query(query, True)
 
-    def q7_2(self, query):
+    def q7_2(self, query: str) -> list:
         """
         Method for Q8 Part 2
         Note: The positions begin from index 0 in my code.
