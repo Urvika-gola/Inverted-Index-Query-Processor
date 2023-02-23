@@ -30,7 +30,7 @@ class InvertedIndex:
             assert False, "The document is empty, returning False."
         return lines
 
-    def _parse_query(self, query: str, is_bidirectional: bool) -> list[Document]:
+    def _parse_query(self, query: str, is_bidirectional: bool) -> list:
         """
         This method does 3 things in order to parse the query
         1. Reads the text file
