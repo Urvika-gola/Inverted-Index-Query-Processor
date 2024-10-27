@@ -15,6 +15,6 @@ Developed for **CSC 583** under **Instructor Mihai Surdeanu**.
 
 ## Public Methods
 read_txt_file(input_file: str) -> list: Reads the document file line by line, returning non-empty lines.
-q7_1_1(query: str) -> list: Executes a bidirectional proximity query.
-q7_1_2(query: str) -> list: Executes a second bidirectional proximity query.
-q7_2(query: str) -> list: Executes a unidirectional proximity query.
+- q7_1_1(query: str) -> list: Executes a bidirectional proximity query.
+- q7_1_2(query: str) -> list: Executes a second bidirectional proximity query.
+- q7_2(query: str) -> list: Executes a unidirectional proximity query.
