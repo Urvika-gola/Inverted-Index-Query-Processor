@@ -1,10 +1,20 @@
-## About
-The InvertedIndex Python class constructs an inverted index from a text file and supports Boolean queries with AND and OR operations. This project was developed for CSC 583 under Instructor Mihai Surdeanu. This project demonstrates efficient text search capabilities on a document corpus.
+# Positional Inverted Index
 
-## Functionalities
-Inverted Index Creation: Parses documents to create an inverted index for fast text search. Boolean Query Processing: Supports complex Boolean queries with AND and OR operations, along with handling operator precedence. Error Handling: Recognizes and informs users of invalid or empty queries/documents.
+## Overview
+This project implements a **Positional Inverted Index** in Python, enabling efficient document retrieval based on term proximity. The `InvertedIndex` class indexes a document corpus and provides search functionality for queries with two terms separated by a specified distance (`k`). The index supports **bidirectional** and **unidirectional** positional proximity search algorithms.
 
-## Testing
-q5_1(query: str) -> list: Executes a simple AND query.
-q5_2(query: str) -> list: Executes a simple OR query.
-q5_3(query: str) -> list: Executes a complex query with both AND and OR, where AND takes precedence.
+Developed for **CSC 583** under **Instructor Mihai Surdeanu**.
+
+## Features
+
+- **Positional Indexing**: Stores term positions for efficient proximity-based retrieval.
+- **Bidirectional and Unidirectional Search**:
+  - **Bidirectional Search**: Finds terms within a distance `k` of each other in either direction.
+  - **Unidirectional Search**: Finds terms within a distance `k` with the first term preceding the second.
+- **Configurable Proximity Queries**: Handles queries in the format `term1 /k term2` to specify the maximum distance between terms.
+
+## Public Methods
+read_txt_file(input_file: str) -> list: Reads the document file line by line, returning non-empty lines.
+q7_1_1(query: str) -> list: Executes a bidirectional proximity query.
+q7_1_2(query: str) -> list: Executes a second bidirectional proximity query.
+q7_2(query: str) -> list: Executes a unidirectional proximity query.
